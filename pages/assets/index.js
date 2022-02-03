@@ -1,4 +1,5 @@
 import { createClient } from 'contentful'
+import { useEffect } from 'react'
 import AssetCard from '../../components/AssetCard'
 
 export async function getStaticProps() {
@@ -20,6 +21,11 @@ export async function getStaticProps() {
 }
 
 const AssetsList = ({ assets }) => {
+
+   useEffect(() => {
+      // console.log(assets)
+   }, []);
+
    return (
       <section>
          <h1 className='text-3xl font-bold underline'>hello world</h1>

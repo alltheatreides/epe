@@ -6,15 +6,18 @@ export default function AssetCard({ asset }) {
 
    return (
       <figure className="card relative min-h-[10rem] mb-4">
-         <div className="featured absolute inset-0 -z-10">
-            <Image
-               src={'https:' + thumbnail.fields.file.url}
-               width="480"
-               height="270"
-               className=''
-            />
+         <div className="featured absolute inset-0 cursor-pointer">
+            <Link href={`/assets/${categories[0]}/${categories[1]}/${slug}`}>
+               <Image
+                  src={'https:' + thumbnail.fields.file.url}
+                  width="480"
+                  height="270"
+                  className=''
+                  alt={title}
+               />
+            </Link>
          </div>
-         <figcaption className="content">
+         <figcaption className="content relative z-[1]">
             <div className="info">
                <h4>{title}</h4>
                {/* <p>{categories.map}</p> */}

@@ -1,13 +1,14 @@
-import AssetCategories from '../components/AssetCategories'
+import Image from 'next/image'
+import AssetsSection from '../components/AssetsSection'
 import HeroSection from '../components/HeroSection'
-import StatisticsArticle from '../components/StatisticsArticle'
+import StatisticsSection from '../components/StatisticsSection'
 
 export default function Home() {
   return (
-    <section className=' my-4'>      
+    <div className='my-4'>
       <HeroSection></HeroSection>
-      <AssetCategories></AssetCategories>
-      <StatisticsArticle></StatisticsArticle>
-    </section>
+      <AssetsSection></AssetsSection>
+      <StatisticsSection></StatisticsSection>
+    </div>
   )
 }

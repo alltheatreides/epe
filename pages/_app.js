@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps }) {
         <Component {...pageProps} />
       </Layout>
       {/* background image */}
-      <div className='absolute inset-0 -z-20'>
+      {/* <div className='absolute inset-0 -z-20'>
         <Image
           // src="/background.jpg" 
           src="/blank_black_template_logoless.png"
@@ -22,7 +22,7 @@ function MyApp({ Component, pageProps }) {
           // object-position="center"
           className=""
         />
-      </div>
+      </div> */}
     </>
   )
 }

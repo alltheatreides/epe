@@ -6,7 +6,7 @@ const Header = () => {
       <header className="container mx-auto flex justify-between items-center">
          <Link href="/">
             <a>
-               <Image src="/EPE-2-2.png" width="227" height="149"/>
+               <Image src="/EPE-2-2.png" width="227" height="149" />
             </a>
          </Link>
          <nav className="flex-1 uppercase font-light tracking-[.25rem]">
