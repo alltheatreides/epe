@@ -2,28 +2,26 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function AssetCard({ asset }) {
-   const { title, slug, categories, thumbnail } = asset.fields
+   const { title, slug, categories, featuresImage } = asset.fields
 
    return (
-      <figure className="card relative min-h-[10rem] mb-4">
-         <div className="featured absolute inset-0 cursor-pointer">
-            <Link href={`/assets/${categories[0]}/${categories[1]}/${slug}`}>
-               <Image
-                  src={'https:' + thumbnail.fields.file.url}
-                  width="480"
-                  height="270"
-                  className=''
-                  alt={title}
-               />
-            </Link>
+      <figure className="card relative mb-4">
+         <div className="featured cursor-pointer">
+            {/* <Link href={`/assets/${categories[0]}/${categories[1]}/${slug}`}> */}
+            <Image
+               // src={'https:' + thumbnail.fields.file.url}
+               src={'https:' + featuresImage.fields.file.url}
+               width="270"
+               height="480"
+               className=''
+               alt={title}
+            />
+            {/* </Link> */}
          </div>
-         <figcaption className="content relative z-[1]">
+         <figcaption className="content relative z-[1] h-min-[480px]">
             <div className="info">
-               <h4>{title}</h4>
+               <h4 className='uppercase font-light tracking-[.25rem] text-justify w-full'>{title}</h4>
                {/* <p>{categories.map}</p> */}
-            </div>
-            <div className="actions">
-               <Link href={'/assets/' + slug}><a>See more</a></Link>
             </div>
          </figcaption>
       </figure>

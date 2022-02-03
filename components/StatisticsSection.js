@@ -2,7 +2,7 @@ import StatisticCard from "./StatisticCard";
 
 const StatisticsSection = () => {
    return (
-      <section className="mt-40">
+      <section className="statistic-section py-20 relative test">
          <article className="container mx-auto">
             <p className="uppercase text-xl font-light tracking-[.25rem]">the mod in numbers</p>
             <h2 className="text-5xl uppercase tracking-[.25rem] lg:w-3/12 mt-4 mb-8">Hundreds new assets</h2>

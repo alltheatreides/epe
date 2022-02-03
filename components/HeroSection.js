@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 const HeroSection = () => {
    return (
-      <section className="hero-section container mx-auto mb-40">
+      <section className="container mx-auto mb-40">
          <figure className="relative w-4/5 mx-auto ">
             <ul className="flex relative">
                <li className="opacity-60 translate-y-4">
@@ -40,6 +40,7 @@ const HeroSection = () => {
                </Link>
             </figcaption>
          </figure>
+
       </section>
 
    );

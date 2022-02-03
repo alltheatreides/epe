@@ -18,12 +18,69 @@
    color: aliceblue;
    font-family: 'Poppins', sans-serif;
    scroll-behavior: smooth;
-   background-color: black;
+   background-color: #181818;
+   /* background-image: url('../public/blank_black_template_logoless.png'), url('../public/feat1-console33.jpg'); */
+   background-image: url('../public/blank_black_template_logoless.png');
+   /* background-image: url('../public/feat1-console33.jpg'); */
+   width: 100%;
+   height: 100%;
+   background-position: center top, center;
+   /* background-size: cover; */
+   background-repeat: no-repeat;
 }
 
-/* .hero-section {
-   min-height: calc(100vh - 155px);
-} */
+.image-1-bg {
+   background-image: url('../public/blank_black_template_logoless.png');
+   width: 100%;
+   height: 100%;
+   background-position: center top;
+   background-size: cover;
+   /* background-attachment: fixed; */
+   background-repeat: no-repeat;
+}
+
+.image-1-bg-2 {
+   background-image: url('../public/blank_black_template_logoless.png');
+   width: 100%;
+   height: 100%;
+   background-position: left;
+   background-size: cover;
+   /* background-attachment: fixed; */
+   background-repeat: no-repeat;
+}
+
+.image-2-bg {
+   background-image: url('../public/feat1-console33.jpg');
+   width: 100%;
+   height: 100%;
+   background-position: center center;
+   background-size: cover;
+   /* background-attachment: fixed; */
+   background-repeat: no-repeat;
+}
+
+#homepage-image-bg {
+   background-image: url('../public/feat1-console33.jpg');
+   width: 100%;
+   height: 100%;
+   background-position: center center;
+   background-size: cover;
+   /* background-attachment: fixed; */
+   background-repeat: no-repeat;
+}
+
+.test::before {
+   content: "";
+   display: block;
+   position: absolute;
+   z-index: 5;
+   top: 0;
+   left: 0;
+   width: 100%;
+   height: 100%;
+   background: url("../public/index-2.png");
+   opacity: .5;
+}
 
 /* .hero-section::after {
    content: ' ';

@@ -5,9 +5,9 @@ import StatisticsSection from '../components/StatisticsSection'
 
 export default function Home() {
   return (
-    <div className='my-4'>
+    <div className='home-wrapper'>
       <HeroSection></HeroSection>
-      <AssetsSection></AssetsSection>
+      <AssetsSection id="homepage-image-bg" padding={"py-16"}></AssetsSection>
       <StatisticsSection></StatisticsSection>
     </div>
   )

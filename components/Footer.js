@@ -1,6 +1,6 @@
 const Footer = () => {
    return (
-      <footer className="text-center lg:text-left bg-[#1A1B1C] mt-40">
+      <footer className="text-center lg:text-left bg-gradient-to-b from-zinc-900 to-[#1A1B1C]">
          <div className="flex justify-center items-center lg:justify-between p-6 border-b border-gray-300 container mx-auto">
             <div className="mr-12 hidden lg:block">
                <span>Get connected with us on social networks:</span>
@@ -101,7 +101,7 @@ const Footer = () => {
          <div className="text-center p-6 bg-zinc-800">
             <span>© 2021 Copyright: </span>
             <a className=" font-semibold" href="https://tailwind-elements.com/">EPE Team and Paradox Interactive.</a>
-            <p>This website was made by <a href="https://github.com/alltheatreides">Atreides</a></p>
+            <p>This website was made by <a href="https://github.com/alltheatreides" className="text-blue-400">Atreides</a></p>
          </div>
       </footer>
    );
