@@ -21,7 +21,7 @@ export default function AssetCard({ asset }) {
          </div>
          <figcaption className="content relative z-[1] h-min-[480px]">
             <div className="info">
-               <h4 className='uppercase font-light tracking-[.25rem] text-justify w-full'>{title}</h4>
+               <h4 className='uppercase font-light lg:tracking-[.25rem] text-justify w-full'>{title}</h4>
                {/* <p>{categories.map}</p> */}
             </div>
          </figcaption>

@@ -5,8 +5,8 @@ const AssetsSection = (props) => {
    return (
       <section id={props.id} className="assets-section" className={props.padding}>
          <article id="assets" className="w-4/5 mx-auto">
-            <p className="uppercase text-xl font-light tracking-[.25rem]">mod features</p>
-            <h2 className="text-5xl uppercase tracking-[.25rem] lg:w-4/12 mt-4 mb-8">Discover our new assets</h2>
+            <p className="uppercase lg:text-xl font-light tracking-[.25rem]">mod features</p>
+            <h2 className="md:text-3xl lg:text-5xl uppercase tracking-[.25rem] lg:w-4/12 mt-4 mb-8">Discover our new assets</h2>
 
             <ul className="flex justify-between my-6 gap-4">
                <CategoryCard src={"/asset_category_card_1.png"} title={"CLOTHING"} desc={"Additional clothing as well as retextured vanilla assets with diverse collection of Arabic, Iranian, Steppe, and European cultural wear with unique patterns, subdivided along religious and geographic boundaries."} reference={"/assets/clothing"} />

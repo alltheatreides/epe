@@ -9,8 +9,8 @@ const CategoryCard = (props) => {
                <Image src={props.src} width="483" height="410" className="cursor-pointer" />
             </Link>
             <figcaption className="">
-               <h3 className="text-2xl tracking-[.25rem] uppercase mt-2">{props.title}</h3>
-               <p className="font-light my-4 pr-12">{props.desc}</p>
+               <h3 className="md:text-xl lg:text-2xl tracking-[.25rem] uppercase mt-2">{props.title}</h3>
+               <p className="font-light my-4 lg:pr-12">{props.desc}</p>
             </figcaption>
          </figure>
       </li>
