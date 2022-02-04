@@ -13,7 +13,7 @@ const Header = () => {
             <nav className="flex-1 uppercase font-light tracking-[.25rem]">
                <ul className="flex justify-end gap-4 md:gap-6 lg:gap-14">
                   <Link href="/"><a>Home</a></Link>
-                  <Link href="/assetCategories"><a>Assets</a></Link>
+                  <Link href="/asset-categories"><a>Assets</a></Link>
                   {/* <Link href="/blog"><a>Blog</a></Link> */}
                   {/* <Link href="/research"><a>Research</a></Link> */}
                   <Link href="/links"><a>Links</a></Link>

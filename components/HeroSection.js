@@ -31,7 +31,7 @@ const HeroSection = () => {
                <h1 className="text-5xl font-bold w-4/6 mx-auto pt-14 leading-normal">
                   ONE MOD, <br></br>COUNTLESS NEW ASSETS TO IMPROVE YOUR GAMES
                </h1>
-               <Link href="/assetCategories">
+               <Link href="/asset-categories">
                   <a className="relative cta place-self-center my-4">
                      <button className="px-12 py-4 rounded-xl text-xl uppercase font-bold underline relative z-10">
                         discover

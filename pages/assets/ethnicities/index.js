@@ -1,5 +1,8 @@
 import { createClient } from 'contentful'
 import AssetCard from '../../../components/AssetCard'
+import BreadCrumb from '../../../components/BreadCrumb'
+import CategoryCard from '../../../components/CategoryCard'
+
 
 export async function getStaticProps() {
 
@@ -11,7 +14,7 @@ export async function getStaticProps() {
 
    // Get the result and Contentful content type
    // Reference: https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/search-parameters/full-text-search-on-a-field/query-entries/console/js
-   const res = await client.getEntries({ content_type: "asset", 'fields.categories': 'ethnicity' })
+   const res = await client.getEntries({ content_type: "asset", 'fields.categories': 'ethnicities' })
 
    return {
       props: {
@@ -20,12 +23,22 @@ export async function getStaticProps() {
    }
 }
 
-const Ethnicities = ({ ethnicities }) => {
+const Headgear = ({ ethnicities }) => {
+
+   // console.log(ethnicitiess)
+
    return (
       <section className='py-20'>
          <article className="w-4/5 mx-auto h-full">
+            <BreadCrumb category={"ethnicities"} />
             <h1 className="text-5xl uppercase tracking-[.25rem] lg:w-3/12 mt-4 mb-8">Ethnicities</h1>
-            <ul className='grid grid-cols-6 gap-6'>
+            <ul className='flex flex-wrap'>
+               <CategoryCard src={"/asset_category_card_4.png"} title={"EUROPE"} desc={"European ethnicities with the broadest geographical sense of europe, with russia up to the urals as well as anatolia."} reference={"/assets/ethnicities/europe"} />
+               <CategoryCard src={"/asset_category_card_4.png"} title={"AFRICA"} desc={"North africa as well as sub-saharan africa."} reference={"/assets/ethnicities/africa"} />
+               <CategoryCard src={"/asset_category_card_4.png"} title={"ASIA"} desc={"Asia in the broadest sense including central asia."} reference={"/assets/ethnicities/asia"} />
+            </ul>
+
+            <ul className='grid grid-cols-6 gap-6 mt-10 pt-10 border-t border-cyan-50'>
                {
                   ethnicities.slice(0, 25).map(asset => (
                      <AssetCard key={asset.sys.id} asset={asset}></AssetCard>
@@ -34,7 +47,7 @@ const Ethnicities = ({ ethnicities }) => {
             </ul>
          </article>
       </section>
-   )
+   );
 }
 
-export default Ethnicities;
+export default Headgear;

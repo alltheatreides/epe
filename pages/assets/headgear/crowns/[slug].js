@@ -55,7 +55,7 @@ const AssetDetails = ({ asset }) => {
    return (
       <section className='py-20'>
          <article className='w-4/5 mx-auto h-full'>
-            <BreadCrumb category={"headgear"} sub={"wargear"} item={title} />
+            <BreadCrumb category={"headgear"} sub={"crowns"} item={title} />
             <figure className="mt-4 grid grid-cols-2 gap-12">
                <Image
                   src={'https:' + featuresImage.fields.file.url}

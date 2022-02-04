@@ -1,5 +1,7 @@
 import { createClient } from 'contentful'
 import AssetCard from '../../../components/AssetCard'
+import BreadCrumb from '../../../components/BreadCrumb'
+import CategoryCard from '../../../components/CategoryCard'
 
 export async function getStaticProps() {
 
@@ -24,8 +26,12 @@ const Clothing = ({ clothing }) => {
    return (
       <section className='py-20'>
          <article className="w-4/5 mx-auto h-full">
+            <BreadCrumb category={"clothing"} />
             <h1 className="text-5xl uppercase tracking-[.25rem] lg:w-3/12 mt-4 mb-8">Clothing</h1>
-            <ul className='grid grid-cols-6 gap-6'>
+            <ul className='flex flex-wrap'>
+               <CategoryCard src={"/asset_category_card_2.png"} title={"CLOAKS"} desc={"Historical cloaks."} reference={"/assets/clothing/cloaks"} />
+            </ul>
+            <ul className='grid grid-cols-6 gap-6 mt-10 pt-10 border-t border-cyan-50'>
                {
                   clothing.slice(0, 25).map(asset => (
                      <AssetCard key={asset.sys.id} asset={asset}></AssetCard>

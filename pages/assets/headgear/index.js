@@ -1,5 +1,7 @@
 import { createClient } from 'contentful'
 import AssetCard from '../../../components/AssetCard'
+import BreadCrumb from '../../../components/BreadCrumb'
+import CategoryCard from '../../../components/CategoryCard'
 
 
 export async function getStaticProps() {
@@ -28,8 +30,16 @@ const Headgear = ({ headgears }) => {
    return (
       <section className='py-20'>
          <article className="w-4/5 mx-auto h-full">
+            <BreadCrumb category={"headgear"} />
             <h1 className="text-5xl uppercase tracking-[.25rem] lg:w-3/12 mt-4 mb-8">Headgear</h1>
-            <ul className='grid grid-cols-6 gap-6'>
+            {/* <input type="text" class="block p-2 pl-10 w-full text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:text-sm focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search..."></input> */}
+            <ul className='flex flex-wrap'>
+               <CategoryCard src={"/asset_category_card_2.png"} title={"CROWNS"} desc={"Historical crowns."} reference={"/assets/headgear/crowns"} />
+               <CategoryCard src={"/asset_category_card_2.png"} title={"WARGEAR"} desc={"Warfare related headgear."} reference={"/assets/headgear/wargear"} />
+               <CategoryCard src={"/asset_category_card_2.png"} title={"OTHER"} desc={"Other type of headgear from cultural hats to veils and everything in between."} reference={"/assets/headgear/other"} />
+            </ul>
+
+            <ul className='grid grid-cols-6 gap-6 mt-10 pt-10 border-t border-cyan-50'>
                {
                   headgears.slice(0, 25).map(asset => (
                      <AssetCard key={asset.sys.id} asset={asset}></AssetCard>
