@@ -2,6 +2,7 @@ import { createClient } from 'contentful'
 import AssetCard from '../../../components/AssetCard'
 import BreadCrumb from '../../../components/BreadCrumb'
 import CategoryCard from '../../../components/CategoryCard'
+import IndexTitle from '../../../components/IndexTitle'
 
 export async function getStaticProps() {
 
@@ -27,9 +28,10 @@ const Clothing = ({ clothing }) => {
       <section className='py-20'>
          <article className="w-4/5 mx-auto h-full">
             <BreadCrumb category={"clothing"} />
-            <h1 className="text-5xl uppercase tracking-[.25rem] lg:w-3/12 mt-4 mb-8">Clothing</h1>
-            <ul className='flex flex-wrap'>
+            <IndexTitle title={"clothing"} />
+            <ul className='flex lg:flex-wrap gap-4'>
                <CategoryCard src={"/asset_category_card_2.png"} title={"CLOAKS"} desc={"Historical cloaks."} reference={"/assets/clothing/cloaks"} />
+               <CategoryCard src={"/asset_category_card_2.png"} title={"TUNICS"} desc={"Historical tunics, from women dresses to men tunics and everything in between."} reference={"/assets/clothing/tunics"} />
             </ul>
             <ul className='grid grid-cols-6 gap-6 mt-10 pt-10 border-t border-cyan-50'>
                {

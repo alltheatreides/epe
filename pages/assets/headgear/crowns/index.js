@@ -2,6 +2,7 @@ import { createClient } from 'contentful'
 import { useState } from 'react'
 import AssetCard from '../../../../components/AssetCard'
 import BreadCrumb from '../../../../components/BreadCrumb'
+import IndexTitle from '../../../../components/IndexTitle'
 
 export async function getStaticProps() {
 
@@ -34,7 +35,7 @@ const Crowns = ({ crowns }) => {
                </div>
             </div>
 
-            <h1 className="text-5xl uppercase tracking-[.25rem] lg:w-3/12 mt-4 mb-8">Crowns</h1>
+            <IndexTitle title={"crowns"} />
             <ul className='grid grid-cols-6 gap-6'>
                {
                   crowns.slice(0, 25).filter(crowns => crowns.fields.title.toLowerCase().includes(filterParam.toLowerCase())).map(asset => (

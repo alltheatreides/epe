@@ -3,6 +3,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import Image from 'next/image'
 import Skeleton from '../../../../components/Skeleton'
 import BreadCrumb from '../../../../components/BreadCrumb'
+import AssetDetailsSection from '../../../../components/AssetDetailsSection'
 
 // Contentful access information
 const client = createClient({
@@ -53,35 +54,15 @@ const AssetDetails = ({ asset }) => {
    if (!asset) return <Skeleton></Skeleton>
    const { title, slug, categories, featuresImage, description } = asset.fields
    return (
-      <section className='py-20'>
-         <article className='w-4/5 mx-auto h-full'>
-            <BreadCrumb category={"ethnicities"} sub={"europe"} item={title} />
-            <figure className="mt-4 grid grid-cols-2 gap-12">
-               <Image
-                  src={'https:' + featuresImage.fields.file.url}
-                  width={featuresImage.fields.file.details.image.width}
-                  height={featuresImage.fields.file.details.image.height}
-               />
-               <figcaption>
-                  <h2 className='text-5xl uppercase tracking-[.25rem] mb-8'>{title}</h2>
-
-                  <div className="categories mb-10">
-                     <h3 className='uppercase text-xl font-light tracking-[.25rem]'>Categories</h3>
-                     <ul className='flex gap-4 font-light'>
-                        {categories.map(ing => (
-                           <li key={ing} className='uppercase'>{ing}</li>
-                        ))}
-                     </ul>
-                  </div>
-
-                  <div className="description">
-                     <h3 className='uppercase text-xl font-light tracking-[.25rem] mb-6'>Description:</h3>
-                     <div>{documentToReactComponents(description)}</div>
-                  </div>
-               </figcaption>
-            </figure>
-         </article>
-      </section>
+      <AssetDetailsSection
+         breadCrumbCategory1={categories[0]}
+         breadCrumbCategory2={categories[1]}
+         title={title}
+         categories={categories}
+         url={featuresImage.fields.file.url}
+         image={featuresImage.fields.file.details.image}
+         description={description}>
+      </AssetDetailsSection>
    );
 }
 

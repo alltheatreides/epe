@@ -1,7 +1,6 @@
 import { createClient } from 'contentful'
-import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
-import Image from 'next/image'
-import Skeleton from './Skeleton'
+import Skeleton from '../../../../components/Skeleton'
+import AssetDetailsSection from '../../../../components/AssetDetailsSection'
 
 // Contentful access information
 const client = createClient({
@@ -52,30 +51,15 @@ const AssetDetails = ({ asset }) => {
    if (!asset) return <Skeleton></Skeleton>
    const { title, slug, categories, featuresImage, description } = asset.fields
    return (
-      <div>
-         <div className="banner">
-            <Image
-               src={'https:' + featuresImage.fields.file.url}
-               width={featuresImage.fields.file.details.image.width}
-               height={featuresImage.fields.file.details.image.height}
-            />
-            <h2>{title}</h2>
-         </div>
-
-         <div className="info">
-            <h3>Catégories:</h3>
-            {categories.map(ing => (
-               <span key={ing}>{ing}</span>
-            ))}
-         </div>
-
-         <div className="method">
-            <h3>Description:</h3>
-            <div>{documentToReactComponents(description)}</div>
-         </div>
-
-
-      </div>
+      <AssetDetailsSection
+         breadCrumbCategory1={categories[0]}
+         breadCrumbCategory2={categories[1]}
+         title={title}
+         categories={categories}
+         url={featuresImage.fields.file.url}
+         image={featuresImage.fields.file.details.image}
+         description={description}>
+      </AssetDetailsSection>
    );
 }
 

@@ -2,6 +2,7 @@ import { createClient } from 'contentful'
 import { useState } from 'react'
 import AssetCard from '../../../../components/AssetCard'
 import BreadCrumb from '../../../../components/BreadCrumb'
+import IndexTitle from '../../../../components/IndexTitle'
 
 export async function getStaticProps() {
 
@@ -33,7 +34,7 @@ const Cloaks = ({ asia }) => {
                   <input type="text" className="block p-2 pl-10 w-4/12 text-gray-900 bg-gray-50 rounded-3xl border border-gray-300 sm:text-sm focus:ring-blue-200 focus:border-blue-200" placeholder="Search..." value={filterParam} onChange={(e) => setFilterParam(e.target.value)}></input>
                </div>
             </div>
-            <h1 className="text-5xl uppercase tracking-[.25rem] lg:w-3/12 mt-4 mb-8">asia</h1>
+            <IndexTitle title={"asia"} />
             <ul className='grid grid-cols-6 gap-6'>
                {
                   asia.slice(0, 25).filter(asia => asia.fields.title.toLowerCase().includes(filterParam.toLowerCase())).map(asset => (
