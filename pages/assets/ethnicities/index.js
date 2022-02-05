@@ -33,7 +33,7 @@ const Headgear = ({ ethnicities }) => {
          <article className="w-4/5 mx-auto h-full">
             <BreadCrumb category={"ethnicities"} />
             <IndexTitle title={"ethnicities"} />
-            <ul className='flex lg:flex-wrap gap-4'>
+            <ul className='flex flex-col md:flex-row gap-4'>
                <CategoryCard src={"/asset_category_card_4.png"} title={"EUROPE"} desc={"European ethnicities with the broadest geographical sense of europe, with russia up to the urals as well as anatolia."} reference={"/assets/ethnicities/europe"} />
                <CategoryCard src={"/asset_category_card_4.png"} title={"AFRICA"} desc={"North africa as well as sub-saharan africa."} reference={"/assets/ethnicities/africa"} />
                <CategoryCard src={"/asset_category_card_4.png"} title={"ASIA"} desc={"Asia in the broadest sense including central asia."} reference={"/assets/ethnicities/asia"} />
