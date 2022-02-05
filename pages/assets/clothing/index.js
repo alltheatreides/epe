@@ -29,11 +29,11 @@ const Clothing = ({ clothing }) => {
          <article className="w-4/5 mx-auto h-full">
             <BreadCrumb category={"clothing"} />
             <IndexTitle title={"clothing"} />
-            <ul className='flex flex-col md:flex-row lg:flex-wrap gap-4'>
+            <ul className='flex flex-col md:flex-row gap-4'>
                <CategoryCard src={"/asset_category_card_2.png"} title={"CLOAKS"} desc={"Historical cloaks."} reference={"/assets/clothing/cloaks"} />
                <CategoryCard src={"/asset_category_card_2.png"} title={"TUNICS"} desc={"Historical tunics, from women dresses to men tunics and everything in between."} reference={"/assets/clothing/tunics"} />
             </ul>
-            <ul className='grid grid-cols-2 md:grid-cols-6 gap-6 mt-10 pt-10 border-t border-cyan-50'>
+            <ul className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6 mt-10 pt-10 border-t border-cyan-50'>
                {
                   clothing.slice(0, 25).map(asset => (
                      <AssetCard key={asset.sys.id} asset={asset}></AssetCard>

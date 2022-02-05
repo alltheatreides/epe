@@ -28,12 +28,12 @@ const HeroSection = () => {
                </li>
             </ul>
             <figcaption className="absolute inset-0 grid place-content-center text-center">
-               <h1 className="md:text-3xl lg:text-5xl font-bold w-4/6 mx-auto pt-14 leading-normal">
+               <h1 className="text-xl md:text-3xl lg:text-5xl font-bold w-4/6 mx-auto pt-14 leading-normal">
                   ONE MOD, <br></br>COUNTLESS NEW ASSETS TO IMPROVE YOUR GAMES
                </h1>
                <Link href="/asset-categories">
                   <a className="relative cta place-self-center my-4">
-                     <button className="md:px-6 lg:px-12 py-4 rounded-xl lg:text-xl uppercase font-bold underline relative z-10">
+                     <button className="px-6 lg:px-12 py-4 rounded-xl lg:text-xl uppercase font-bold underline relative z-10">
                         discover
                      </button>
                   </a>

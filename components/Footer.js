@@ -59,7 +59,7 @@ const Footer = () => {
                      <a href="#!" className="">Steam Collection</a>
                   </p>
                   <p className="mb-4">
-                     <a href="#!" className="">Discord</a>
+                     <a href="https://discord.gg/xdSAeDPT8y" className="">Discord</a>
                   </p>
                </div>
                <div className="">

@@ -35,13 +35,13 @@ const Headgear = ({ headgears }) => {
          <article className="w-4/5 mx-auto h-full">
             <BreadCrumb category={"headgear"} />
             <IndexTitle title={"headgear"} />
-            <ul className='flex flex-col md:flex-row ap-4'>
+            <ul className='flex flex-col md:flex-row gap-4'>
                <CategoryCard src={"/asset_category_card_2.png"} title={"CROWNS"} desc={"Historical crowns."} reference={"/assets/headgear/crowns"} />
                <CategoryCard src={"/asset_category_card_2.png"} title={"WARGEAR"} desc={"Warfare related headgear."} reference={"/assets/headgear/wargear"} />
                <CategoryCard src={"/asset_category_card_2.png"} title={"OTHER"} desc={"Other type of headgear from cultural hats to veils and everything in between."} reference={"/assets/headgear/other"} />
             </ul>
 
-            <ul className='grid grid-cols-6 gap-6 mt-10 pt-10 border-t border-cyan-50'>
+            <ul className='grid md:grid-cols-4 lg:grid-cols-6 gap-6 mt-10 pt-10 border-t border-cyan-50'>
                {
                   headgears.slice(0, 25).map(asset => (
                      <AssetCard key={asset.sys.id} asset={asset}></AssetCard>

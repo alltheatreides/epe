@@ -21,7 +21,7 @@ const AssetCategoryIndex = (props) => {
                </div>
             </div>
             <IndexTitle title={props.breadCrumbCategory2} />
-            <ul className='grid grid-cols-2 md:grid-cols-6 gap-6'>
+            <ul className='grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-6'>
                {
                   dataArr.slice(0, 25).filter(dataArr => dataArr.fields.title.toLowerCase().includes(props.filterParam.toLowerCase())).map(asset => <AssetCard key={asset.sys.id} asset={asset}></AssetCard>)
                }

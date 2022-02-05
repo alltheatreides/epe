@@ -4,7 +4,7 @@ import Link from "next/link";
 const Header = () => {
    return (
       <header className="">
-         <div className="container mx-auto flex justify-between items-center">
+         <div className="container mx-auto flex flex-col mb-6 md:mb-0 md:flex-row justify-between items-center">
             <Link href="/">
                <a>
                   <Image src="/EPE-2-2.png" width="227" height="149" />

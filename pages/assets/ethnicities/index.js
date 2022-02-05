@@ -39,7 +39,7 @@ const Headgear = ({ ethnicities }) => {
                <CategoryCard src={"/asset_category_card_4.png"} title={"ASIA"} desc={"Asia in the broadest sense including central asia."} reference={"/assets/ethnicities/asia"} />
             </ul>
 
-            <ul className='grid grid-cols-6 gap-6 mt-10 pt-10 border-t border-cyan-50'>
+            <ul className='grid md:grid-cols-4 lg:grid-cols-6 gap-6 mt-10 pt-10 border-t border-cyan-50'>
                {
                   ethnicities.slice(0, 25).map(asset => (
                      <AssetCard key={asset.sys.id} asset={asset}></AssetCard>
