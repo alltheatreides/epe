@@ -6,7 +6,7 @@ export default function Layout({ children }) {
    return (
       <>
          <Header></Header>
-         <main className="main-content-wrapper">
+         <main className="main-content-wrapper scroll-smooth">
             {children}
          </main>
          <Footer></Footer>

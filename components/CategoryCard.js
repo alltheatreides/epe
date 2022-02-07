@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const CategoryCard = (props) => {
    return (
-      <li className="md:w-1/3">
+      <li className="test md:w-1/3">
          <figure className="">
             <Link href={props.reference}>
                <Image src={props.src} width="483" height="410" className="cursor-pointer" />
