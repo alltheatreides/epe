@@ -17,7 +17,7 @@ const homeAnimation = completeAnimation => {
    //    }
    // })
    tl.to('.landing-image', { 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', opacity: 0.6, stagger: { amount: 1.5 } })
-   tl.to('h1', { 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', opacity: 1, y: 0, duration: 2.2, stagger: { amount: 1.1 } })
+   tl.to('h1', { 'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)', opacity: 1, y: 0, duration: 2.2, stagger: { amount: 1.1 } }, "<1.2")
    tl.to('.cta', { 'clip-path': 'polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)', opacity: 1, y: 0, delay: 1 }, "-=2")
 };
 
