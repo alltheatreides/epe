@@ -78,3 +78,21 @@ main {
    background-color: #1A1B1C;
    opacity: 0.8;
 }
+
+
+/* GSAP ANIMATION */
+.hero {
+   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+   opacity: 0;
+   transform: translateY(100px);
+}
+
+.cta {
+   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+}
+
+.landing-image {
+   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+   opacity: 0;
+   /* transform: translateY(100px); */
+}
