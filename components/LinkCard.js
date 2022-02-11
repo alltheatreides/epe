@@ -4,7 +4,7 @@ const LinkCard = (props) => {
    return (
       <figure className="max-w-sm bg-gradient-to-b from-zinc-900 to-[#1A1B1C] rounded-lg border border-gray-200 shadow-md dark:bg-gray-800 dark:border-gray-700">
          <a href={props.link}>
-            <Image className="rounded-t-lg" src={props.image} alt={props.alt} alt="Asset Image" />
+            <Image className="rounded-t-lg" src={props.image} alt={props.alt} />
          </a>
          <figcaption className="p-5">
             <a href={props.link}>
