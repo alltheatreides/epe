@@ -7,7 +7,7 @@ const Header = () => {
          <div className="container mx-auto flex flex-col mb-6 md:mb-0 md:flex-row justify-between items-center">
             <Link href="/">
                <a>
-                  <Image src="/EPE-2-2.png" width="227" height="149" />
+                  <Image src="/EPE-2-2.png" width="227" height="149" alt="EPE Logo" />
                </a>
             </Link>
             <nav className="flex-1 uppercase font-light tracking-[.25rem]">

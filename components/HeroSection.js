@@ -39,25 +39,25 @@ const HeroSection = () => {
          <figure className="relative lg:w-4/5 mx-auto ">
             <ul className="flex relative">
                <li className="landing-image opacity-60 translate-y-4">
-                  <Image src="/card1.png" height="804.31" width="197.28" />
+                  <Image src="/card1.png" height="804.31" width="197.28" alt="Crusader Kings 3 Characters" />
                </li>
                <li className="landing-image opacity-60">
-                  <Image src="/card2.png" height="804.31" width="197.28" />
+                  <Image src="/card2.png" height="804.31" width="197.28" alt="Crusader Kings 3 Characters" />
                </li>
                <li className="landing-image opacity-60 translate-y-4">
-                  <Image src="/card3.png" height="804.31" width="197.28" />
+                  <Image src="/card3.png" height="804.31" width="197.28" alt="Crusader Kings 3 Characters" />
                </li>
                <li className="landing-image opacity-60">
-                  <Image src="/card4.png" height="804.31" width="197.28" />
+                  <Image src="/card4.png" height="804.31" width="197.28" alt="Crusader Kings 3 Characters" />
                </li>
                <li className="landing-image opacity-60 translate-y-2">
-                  <Image src="/card5.png" height="804.31" width="197.28" />
+                  <Image src="/card5.png" height="804.31" width="197.28" alt="Crusader Kings 3 Characters" />
                </li>
                <li className="landing-image opacity-60 translate-y-4">
-                  <Image src="/card6.png" height="804.31" width="197.28" />
+                  <Image src="/card6.png" height="804.31" width="197.28" alt="Crusader Kings 3 Characters" />
                </li>
                <li className="landing-image opacity-60">
-                  <Image src="/card7.png" height="804.31" width="197.28" />
+                  <Image src="/card7.png" height="804.31" width="197.28" alt="Crusader Kings 3 Characters" />
                </li>
             </ul>
             <figcaption className="absolute inset-0 grid place-content-center text-center">

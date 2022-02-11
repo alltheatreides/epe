@@ -7,7 +7,7 @@ export default function AssetCard({ asset }) {
    return (
       <figure className="card relative mb-4">
          <div className="featured cursor-pointer">
-            <Link href={`/assets/${categories[0]}/${categories[1]}/${slug}`}>
+            <Link href={`/assets/${categories[0]}/${categories[1]}/${slug}`} passHref="true" >
                {/* <> */}
                <Image
                   // src={'https:' + thumbnail.fields.file.url}

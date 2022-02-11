@@ -11,10 +11,10 @@ const AssetDetailsSection = (props) => {
             <figure className="mt-4 grid lg:grid-cols-2 gap-12">
                {/* <div className="w-full"> */}
 
-               <Image src={'https:' + props.url} width={props.image.width} height={props.image.height} layout="responsive" className="" />
+               <Image src={'https:' + props.url} width={props.image.width} height={props.image.height} layout="responsive" className="" alt="image of an asset" />
                {/* </div> */}
                <figcaption>
-                  <h2 className='text-5xl uppercase tracking-[.25rem] mb-8'>{props.title}</h2>
+                  <h2 className='text-5xl uppercase tracking-[.25rem] mb-8'>{props.title2}</h2>
 
                   <div className="categories mb-10">
                      <h3 className='uppercase text-xl font-light tracking-[.25rem]'>Categories</h3>

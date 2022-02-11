@@ -33,7 +33,7 @@ const Footer = () => {
                      Extended Mods Family
                   </h6>
                   <p>
-                     Extended Portraits and Ethnicities is a Crusader Kings 3 modification, part of the Extended Mods family aiming to improve player's experience.
+                     Extended Portraits and Ethnicities is a Crusader Kings 3 modification, part of the Extended Mods family aiming to improve player&apos;s experience.
                   </p>
                </div>
                <div className="">

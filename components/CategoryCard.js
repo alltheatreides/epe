@@ -5,7 +5,7 @@ const CategoryCard = (props) => {
    return (
       <li className="md:w-1/3">
          <figure className="">
-            <Link href={props.reference}>
+            <Link href={props.reference} passHref="true">
                <Image src={props.src} width="483" height="410" className="cursor-pointer" />
             </Link>
             <figcaption className="">
