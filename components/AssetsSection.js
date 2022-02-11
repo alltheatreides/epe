@@ -7,26 +7,29 @@ import CategoryCard from "./CategoryCard";
 
 const AssetsSection = (props) => {
 
-   gsap.registerPlugin(ScrollTrigger, Power3)
+   // gsap.registerPlugin(ScrollTrigger, Power3)
 
-   useEffect(() => {
-      gsap.from([".text", ".text2", ".si", ".test"], {
-         duration: 4,
-         ease: Power3.easeOut,
-         y: "100vh",
-         opacity: 0,
-         stagger: 0.5,
-         scrollTrigger: {
-            // markers: true,
-            trigger: "#assets",
-            // once: true,
-            start: "top bottom",
-            end: "top top",
-            scrub: true,
-         },
-      });
+   // useEffect(() => {
+   //    gsap.to([".text", ".text2", ".si", ".test"], {
+   //       duration: 4,
+   //       ease: Power3.easeOut,
+   //       // y: "100vh",
+   //       // opacity: 0,
+   //       y: 0,
+   //       stagger: 0.5,
+   //       clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+   //       opacity: 1,
+   //       scrollTrigger: {
+   //          // markers: true,
+   //          trigger: "#assets",
+   //          once: true,
+   //          start: "top bottom",
+   //          end: "top top",
+   //          scrub: true,
+   //       },
+   //    });
 
-   }, []);
+   // }, []);
 
 
    return (

@@ -96,3 +96,14 @@ main {
    opacity: 0;
    /* transform: translateY(100px); */
 }
+
+/* .text, .text2, .si, .test, .wtf, .wtf2, .wtf3, .sisi, .stagger {
+   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+   opacity: 0;
+   transform: translateY(100px);
+} */
+.wtf, .wtf2, .wtf3, .sisi, .stagger {
+   clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0% 100%);
+   opacity: 0;
+   transform: translateY(100px);
+}

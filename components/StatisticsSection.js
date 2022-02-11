@@ -8,18 +8,21 @@ const StatisticsSection = () => {
    gsap.registerPlugin(ScrollTrigger, Power3)
 
    useEffect(() => {
-      gsap.from([".wtf", ".wtf2", ".wtf3", ".sisi", ".stagger"], {
-         duration: 4,
+      gsap.to([".wtf", ".wtf2", ".wtf3", ".sisi", ".stagger"], {
+         duration: 1.5,
          ease: Power3.easeOut,
-         y: "100vh",
-         opacity: 0,
+         y: 0,
          stagger: 0.5,
+         clipPath: "polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)",
+         opacity: 1,
          scrollTrigger: {
             // markers: true,
             trigger: ".statistic-section",
-            // once: true,
+            // trigger: "#cat",
+            once: true,
             start: "top bottom",
-            end: "top top",
+            // end: "top top",
+            end: "-=50%",
             scrub: true,
          },
       });
@@ -32,13 +35,13 @@ const StatisticsSection = () => {
             <p className="wtf uppercase lg:text-xl font-light tracking-[.25rem]">the mod in numbers</p>
             <h2 className="wtf2 text-xl md:text-3xl lg:text-5xl uppercase tracking-[.25rem] lg:w-3/12 mt-4 mb-8">Hundreds new assets</h2>
 
-            <div className="flex flex-col md:flex-row my-8">
-               <div className="wtf2 md:w-3/6 lg:w-2/6 mb-4 md:mb-0 md:pr-6 lg:pr-12">
+            <div className="wtf3 flex flex-col md:flex-row my-8">
+               <div className=" md:w-3/6 lg:w-2/6 mb-4 md:mb-0 md:pr-6 lg:pr-12">
                   <p className="mb-4">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nulla illum dolore odio! Non ratione eum expedita eius eveniet exercitationem ab ipsum. Ratione nesciunt praesentium est. Explicabo, deserunt! Optio, quasi!</p>
                   <p className="">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro nulla illum dolore odio! Non ratione eum expedita eius eveniet exercitationem ab ipsum. Ratione nesciunt praesentium est. Explicabo, deserunt! Optio, quasi!</p>
                </div>
 
-               <ul className="sisi md:w-3/6 lg:w-4/6 lg:pl-4 mx-auto flex flex-col lg:flex-row justify-between gap-6">
+               <ul className="md:w-3/6 lg:w-4/6 lg:pl-4 mx-auto flex flex-col lg:flex-row justify-between gap-6">
                   <StatisticCard
                      alt={"download icon"}
                      title={"102 886"}
