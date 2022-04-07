@@ -37,7 +37,7 @@ const Headgear = ({ headgears }) => {
             <IndexTitle title={"headgear"} />
             <ul className='flex flex-col md:flex-row gap-4'>
                <CategoryCard src={"/asset_category_card_2.png"} title={"CROWNS"} desc={"Historical crowns."} reference={"/assets/headgear/crowns"} />
-               <CategoryCard src={"/asset_category_card_2.png"} title={"WARGEAR"} desc={"Warfare related headgear."} reference={"/assets/headgear/wargear"} />
+               <CategoryCard src={"/asset_category_card_2.png"} title={"HELMETS"} desc={"Warfare related headgear."} reference={"/assets/headgear/helmets"} />
                <CategoryCard src={"/asset_category_card_2.png"} title={"OTHER"} desc={"Other type of headgear from cultural hats to veils and everything in between."} reference={"/assets/headgear/other"} />
             </ul>
 
